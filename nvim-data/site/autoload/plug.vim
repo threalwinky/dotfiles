@@ -8,7 +8,7 @@
 "
 " Edit your .vimrc
 "
-"   call plug#begin('~/AppData/Local/nvim-data/site/autoload')
+"   call plug#begin('~/.vim/plugged')
 "
 "   " Make sure you use single quotes
 "
