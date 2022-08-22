@@ -1,3 +1,9 @@
+if has('win32')
+  set clipboard=unnamed  
+else
+  set clipboard=unnamedplus
+endif
+
 let g:copy_cut_paste_no_mappings = 1
 " Use your keymap
 nmap BC <Plug>CCP_CopyLine
