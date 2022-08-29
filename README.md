@@ -15,10 +15,6 @@ More beautiful if you have Windows Terminal or Linux terminal and use its backgr
 
 And here is the preview pic of my config : 
 
-<<<<<<< HEAD
-[!plot][pic.png]
-=======
-![plot](pic.png)
->>>>>>> 0426f433fe9589ec64a1d9b8ca0abe2e8d1ab64b
+[!plot]pic.png
 
 Hopefully you enjoyed !!
