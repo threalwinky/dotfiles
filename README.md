@@ -15,6 +15,11 @@ More beautiful if you have Windows Terminal or Linux terminal and use its backgr
 
 And here is the preview pic of my config : 
 
++ Without colorscheme
+
 <img src = pic.png> </img>
 
++ Within colorscheme
+
+<img src = pic1.png> </img>
 Hopefully you enjoyed !!
