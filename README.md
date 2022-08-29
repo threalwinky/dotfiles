@@ -15,6 +15,6 @@ More beautiful if you have Windows Terminal or Linux terminal and use its backgr
 
 And here is the preview pic of my config : 
 
-[!plot]pic.png
+<img src = pic.png> </img>
 
 Hopefully you enjoyed !!
