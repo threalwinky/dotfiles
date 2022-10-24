@@ -11,5 +11,5 @@ let g:PaperColor_Theme_Options = {
   \     }
   \   }
   \ }
-colorscheme dracula
-highlight LineNr guifg=darkcyan 
+colorscheme molokai
+hi Normal guibg=NONE ctermbg=NONE

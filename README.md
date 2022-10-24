@@ -1,25 +1,29 @@
 This is my NeoVim settings
 
 Requirements:
-  + Python
-  + NodeJS
-  + Internet
+    + Internet
+    + Python and pynvim
+    + NodeJS and install neovim using npm
 
 Installing :
-  + Install plug-vim : https://github.com/junegunn/vim-plug
-  + Copy and paste nvim and nvim-data folder at local . For me it's is ~/AppData/Local/
-  + edit file init.vim with NeoVim run command : PlugI   to install all the plug-in
-  + Enjoy
+- Install PowerShell config
+    + Get Scoop ("https://scoop.sh/")
+    + Run ("scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json")
+    + Copy and paste Microsoft.PowerShell_profile.ps1 and quick-term.omp.json to "~\Documents\WindowsPowerShell"
+- Install NeoVim config
+    + Install plug-vim : https://github.com/junegunn/vim-plug
+    + Copy and paste nvim and nvim-data folder at local. For me it's is ~/AppData/Local/
+    + Edit file init.vim with NeoVim run command : PlugI to install all the plug-in
+    + Enjoy
 
 More beautiful if you have Windows Terminal or Linux terminal and use its background
 
-And here is the preview pic of my config : 
+And here is the preview pic of my PowerShell config :
 
-+ Without colorscheme
+<img src = ./image/img1.png> </img>
 
-<img src = pic.png> </img>
+and my NeoVim config : 
 
-+ Within colorscheme
+<img src = ./image/img2.png> </img>
 
-<img src = pic1.png> </img>
 Hopefully you enjoyed !!
