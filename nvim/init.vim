@@ -51,6 +51,7 @@ call plug#end()
 syntax on
 syntax enable
 filetype plugin indent on
+set clipboard=unnamed
 set number 
 set nowrap
 set nocompatible
