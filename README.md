@@ -10,6 +10,9 @@ Installing :
     + Get Scoop ("https://scoop.sh/")
     + Run ("scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json")
     + Copy and paste Microsoft.PowerShell_profile.ps1 and quick-term.omp.json to "~\Documents\WindowsPowerShell"
+    + Install-Module PowershellGet -Force
+    + PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
+    + Install-Module -Name Terminal-Icons -Repository PSGallery
 - Install NeoVim config
     + Install plug-vim : https://github.com/junegunn/vim-plug
     + Copy and paste nvim and nvim-data folder at local. For me it's is ~/AppData/Local/
