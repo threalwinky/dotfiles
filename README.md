@@ -1,4 +1,4 @@
-<h2 align="center">My archlinux dotfiles</h2>
+<h2 align="center">My ubuntu dotfiles</h2>
 
 ### Images
 <p align="center">
@@ -6,7 +6,6 @@
 <img src="./img/a.png">
 <img src="./img/b.png">
 <img src="./img/c.png">
-<img src="./img/d.png">
 
 </p>
 
@@ -14,11 +13,11 @@
 ### Overview
 | Type          | Package name                                                                                  |
 | :------------ |:----------------------------------------------------------------------------------------------|
-| Color scheme  | [Kali-Dark](https://github.com/SofianeHamlaoui/Kali-Dark)                                        |
-|Desktop Environment | [Hyprland](https://github.com/hyprwm/Hyprland)       |
-| Window manager            | [sway](https://github.com/swaywm/sway)                                                 |
+| Color scheme  | [Yaru-viridian-dark](https://www.gnome-look.org/p/1252100/)                                        |
+|Desktop Environment | [GNOME](https://www.gnome.org/)    |
+| Window manager            | [Mutter](https://mutter.gnome.org/)                                               |
 | Shell         | [zsh](https://zsh.sourceforge.io/)                                                            |                       |
-| Terminal      | [kitty](https://github.com/kovidgoyal/kitty)                                                  |
+| Terminal      | [wezterm](https://wezterm.org/)                                                  |
 | Text editor   | [neovim](https://github.com/neovim/neovim/), [vscode](https://github.com/microsoft/vscode)     |
-|File Manager|[thunar](https://github.com/xfce-mirror/thunar)|
-|Keyboard|[fcitx](https://github.com/fcitx/fcitx5)|
+|File Manager|[nautilus](https://apps.gnome.org/Nautilus/)|
+|Keyboard|[ibus-unikey](https://github.com/vn-input/ibus-unikey)|

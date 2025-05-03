@@ -1,3 +1,0 @@
-connect.dial_devices="[{\"address\":\"192.168.1.7\",\"app_state\":\"MISSING\",\"created_timestamp\":1732850318,\"device_id\":\"B84DEE7835A0\",\"dial_location_url\":\"http://192.168.1.7:56790/dd.xml\",\"display_name\":\"FPT TV (B84DEE7835A0)\",\"last_seen\":1732851217,\"manufacturer\":\"FPT\",\"model_name\":\"FPTBox4K\",\"product_cap\":\"\",\"public_ip\":\"2405:4803:db35:df10:72f9:f37b:147c:ee1e\",\"wol\":{\"all_interfaces\":false,\"delay_ms\":50,\"mac\":\"b84dee7835a0\",\"port\":9,\"retries\":400}}]"
-audio.play_bitrate_non_metered_migrated=true
-app.player.volume=62716

@@ -1,0 +1,9 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "glassit.alpha": 215,
+    "workbench.colorTheme": "01 Green Valley (Midnight)",
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "workbench.iconTheme": "material-icon-theme"
+}

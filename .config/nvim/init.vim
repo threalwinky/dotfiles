@@ -341,4 +341,3 @@ nnoremap <silent><nowait> <leader>of :vsplit<CR><C-w>l:e a.out<CR>:vertical resi
 nnoremap <silent><nowait> <leader>cf :wq<CR>:wq<CR>
 nnoremap <silent><nowait> <leader>st :e ~\AppData\Local\nvim\init.vim<CR> <S-G>
 let NERDTreeShowHidden=1
-
