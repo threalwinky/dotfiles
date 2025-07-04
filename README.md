@@ -19,7 +19,6 @@
 <img src="./img/a.png">
 <img src="./img/b.png">
 <img src="./img/c.png">
-<img src="./img/d.png">
 
 </p>
 
