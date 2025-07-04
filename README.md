@@ -14,11 +14,11 @@
 ### Overview
 | Type          | Package name                                                                                  |
 | :------------ |:----------------------------------------------------------------------------------------------|
-| Color scheme  | [Kali-Dark](https://github.com/SofianeHamlaoui/Kali-Dark)                                        |
-|Desktop Environment | [Hyprland](https://github.com/hyprwm/Hyprland)       |
-| Window manager            | [sway](https://github.com/swaywm/sway)                                                 |
+|Window Manager  | [sway](https://swaywm.org/)       |
 | Shell         | [zsh](https://zsh.sourceforge.io/)                                                            |                       |
-| Terminal      | [kitty](https://github.com/kovidgoyal/kitty)                                                  |
-| Text editor   | [neovim](https://github.com/neovim/neovim/), [vscode](https://github.com/microsoft/vscode)     |
+| Terminal      | [alacritty](https://alacritty.org/)                                                  |
+| Text Editor   | [neovim](https://github.com/neovim/neovim/), [vscode](https://github.com/microsoft/vscode)     |
 |File Manager|[thunar](https://github.com/xfce-mirror/thunar)|
-|Keyboard|[fcitx](https://github.com/fcitx/fcitx5)|
+|Keyboard|[fcitx5](https://github.com/fcitx/fcitx5)|
+|Status Bar|[waybar](https://github.com/Alexays/Waybar)|
+|Window Switcher|[rofi](https://wiki.archlinux.org/title/Rofi)|

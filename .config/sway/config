@@ -4,7 +4,6 @@
 #
 # Read `man 5 sway` for a complete reference.
 include "$HOME/.cache/wal/colors-sway"
-
 font pango: SourceCodePro Medium 15
 
 gaps inner 10
@@ -22,13 +21,14 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty 
 # Your preferred application launcher
-set $menu rofi -show run
-set $wallpaper /home/winky/Workspace/scripts/../Themes/bg7
+set $menu rofi -show run 
+set $filemanager nemo
+
 ### Output configuration
 #
+set $wallpaper /home/winky/.theme/background/bg2.png
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg $wallpaper fill
-bindsym $mod+Shift+p exec wal -R
 #
 # Example configuration:
 #
@@ -40,11 +40,17 @@ bindsym $mod+Shift+p exec wal -R
 #
 # Example configuration:
 #
-exec swayidle -w \
-         timeout 300 'swaylock -f -c 000000' \
-         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          before-sleep 'swaylock -f -c 000000'
+# exec swayidle -w \
+#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          before-sleep 'swaylock -f -c 000000'
 #
+
+exec swayidle -w \
+    timeout 300 'swaylock -f -c 000000' \
+    timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+    before-sleep 'swaylock -f -c 000000'
+
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
@@ -81,8 +87,6 @@ input "type:pointer" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+Shift+Return exec $term --class=floating
-
 
     # Kill focused window
     bindsym $mod+q kill
@@ -226,24 +230,24 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    ## bindsym Print exec grim
+    bindsym Print exec grim
 
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 #bar {
-#    position top
-#
+ #   position top
+
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-#    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-#
-#    colors {
-#        statusline #ffffff
-#        background #323232
-#        inactive_workspace #32323200 #32323200 #5c5c5c
-#    }
+  #  status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+   # colors {
+    #    statusline #ffffff
+     #   background #323232
+      #  inactive_workspace #32323200 #32323200 #5c5c5c
+    #}
 #}
 
 bar {
@@ -286,7 +290,12 @@ shadow_blur_radius 20
 exec wal -R
 exec fcitx5
 
-for_window [class=“code-oss”] opacity 0.8
+for_window [class="code-oss"] opacity 0.9
+for_window [class="Spotify"] opacity 0.9
+for_window [class="Google-chrome"] opacity 0.9
+for_window [class="MongoDB Compass"] opacity 0.9
+for_window [app_id="firefox"] opacity 0.9
+for_window [app_id="nemo"] opacity 0.9
 
 # Screenshot a window
 # bindsym $mod+Print exec sway-screenshot -m window -o ~/Screenshots
@@ -303,3 +312,7 @@ bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | wl-copy
     
 # capture the focused monitor to clipboard    
 bindsym $mod+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+
+bindsym Control+Shift+e exec $filemanager
+bindsym $mod+z exec swaylock -f -c 000000
+bindsym $mod+Shift+z exec swaylock -f -c 000000 & systemctl suspend
