@@ -1,16 +1,5 @@
 <h2 align="center">My archlinux dotfiles</h2>
 
-### Images
-<p align="center">
-
-<img src="./img/a.png">
-<img src="./img/b.png">
-<img src="./img/c.png">
-<img src="./img/d.png">
-
-</p>
-
-
 ### Overview
 | Type          | Package name                                                                                  |
 | :------------ |:----------------------------------------------------------------------------------------------|
@@ -22,3 +11,16 @@
 |Keyboard|[fcitx5](https://github.com/fcitx/fcitx5)|
 |Status Bar|[waybar](https://github.com/Alexays/Waybar)|
 |Window Switcher|[rofi](https://wiki.archlinux.org/title/Rofi)|
+
+### Images
+
+<p align="center">
+
+<img src="./img/a.png">
+<img src="./img/b.png">
+<img src="./img/c.png">
+<img src="./img/d.png">
+
+</p>
+
+
