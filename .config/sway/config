@@ -230,7 +230,8 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    # bindsym Print exec env GRIM_DEFAULT_DIR=/home/winky/Screenshots grim
+    bindsym Print exec echo 'ZW52IEdSSU1fREVGQVVMVF9ESVI9L2hvbWUvd2lua3kvU2NyZWVuc2hvdHMgZ3JpbQo=' | base64 -d | bash    
 
 #
 # Status Bar:
@@ -289,6 +290,8 @@ shadow_blur_radius 20
 
 exec wal -R
 exec fcitx5
+exec wl-paste --type image --watch cliphist store
+exec wl-paste --type text --watch cliphist store
 
 for_window [class="code-oss"] opacity 0.9
 for_window [class="Spotify"] opacity 0.9
@@ -296,6 +299,7 @@ for_window [class="Google-chrome"] opacity 0.9
 for_window [class="MongoDB Compass"] opacity 0.9
 for_window [app_id="firefox"] opacity 0.9
 for_window [app_id="nemo"] opacity 0.9
+for_window [class="burp-StartBurp"] opacity 0.9
 
 # Screenshot a window
 # bindsym $mod+Print exec sway-screenshot -m window -o ~/Screenshots
@@ -316,3 +320,4 @@ bindsym $mod+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | 
 bindsym Control+Shift+e exec $filemanager
 bindsym $mod+z exec swaylock -f -c 000000
 bindsym $mod+Shift+z exec swaylock -f -c 000000 & systemctl suspend
+bindsym $mod+Shift+v exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
