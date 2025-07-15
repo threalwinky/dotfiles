@@ -64,13 +64,17 @@ yay -S blueman
 
 use blueman-manager
 
-## Install nerd-font
+## Install fonts
 
 https://www.nerdfonts.com/font-downloads
 
 unzip <nerd-font-zip>
 
 mv <nerd-font-folder> /usr/share/fonts/
+
+sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu
+
+sudo pacman -S ttf-liberation ttf-droid
 
 fc-cache -fv
 
