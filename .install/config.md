@@ -129,3 +129,7 @@ sudo usermod -aG docker $USER
 ## Install java
 
 sudo pacman -S jdk-openjdk
+
+# Install clipboard
+
+yay -S cliphist
